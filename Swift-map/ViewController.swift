@@ -11,7 +11,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let names = ["sergey", "michael", "john", "bill", "tom"]
+        let capitalizedNames = names.map { (name) -> String in
+            return name.capitalized
+        }
+        print(capitalizedNames) // ["Sergey", "Michael", "John", "Bill", "Tom"]
+
+
     }
 
 
